@@ -1,0 +1,15 @@
+	<div class="content" ng-controller="xctrl"> 
+		
+		<ul class="table-view" >
+		  <li class="table-view-cell media" ng-repeat="m in mahasiswa | filter:pencarian">
+		    <a class="navigate-right">
+		      <span class="media-object pull-left icon icon-person"></span>
+		      <div class="media-body">
+		        {{m.nama}}
+		      </div>
+		    </a>
+		  </li>
+		</ul>
+
+	</div>	
+

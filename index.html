@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <title>Title Page</title> -->
+		<script src="js/angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+		
+ 		<script>
+ 			var app = angular.module('myApp', []);
+ 			// app.controller('controller',function($scope){
+ 			// 	$scope.home = function(){
+ 			// 		alert("hoome");
+ 			// 	}
+ 			// });
+ 		</script>
+	</head>
+	<body ng-controller="controller">
+		<header class="bar bar-nav">
+			<a class="icon icon-left-nav pull-left"></a>
+  			<a class="icon icon-compose pull-right"></a>
+		    <h1 class="title">Title</h1>
+		</header>
+
+		<div class="content">
+			<ul class="table-view">
+			  <li class="table-view-cell media">
+			    <a class="navigate-right">
+			      <span class="media-object pull-left icon icon-trash"></span>
+			      <div class="media-body">
+			        Item 1
+			      </div>
+			    </a>
+			  </li>
+			  <li class="table-view-cell media">
+			    <a class="navigate-right">
+			      <span class="media-object pull-left icon icon-gear"></span>
+			      <div class="media-body">
+			        Item 2
+			      </div>
+			    </a>
+			  </li>
+			  <li class="table-view-cell media">
+			    <a class="navigate-right">
+			      <span class="media-object pull-left icon icon-pages"></span>
+			      <div class="media-body">
+			        Item 3
+			      </div>
+			    </a>
+			  </li>
+			</ul>
+		</div>
+
+		<nav class="bar bar-tab">
+		  <a class="tab-item active" href="#" ng-click="home">
+		    <span class="icon icon-home"></span>
+		    <span class="tab-label">Home</span>
+		  </a>
+		  <a class="tab-item" href="#">
+		    <span class="icon icon-person"></span>
+		    <span class="tab-label">Profile</span>
+		  </a>
+		  <a class="tab-item" href="#">
+		    <span class="icon icon-star-filled"></span>
+		    <span class="tab-label">Favorites</span>
+		  </a>
+		  <a class="tab-item" href="#">
+		    <span class="icon icon-search"></span>
+		    <span class="tab-label">Search</span>
+		  </a>
+		  <a class="tab-item" href="#">
+		    <span class="icon icon-gear"></span>
+		    <span class="tab-label">Settings</span>
+		  </a>
+		</nav>
+
+ 		<script src="js/ratchet.min.js"></script>
+
+	</body>
+</html>
+
